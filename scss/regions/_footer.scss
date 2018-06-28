@@ -1,0 +1,9 @@
+footer {
+	background-color: $lightgray;
+	min-height: 8vh;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 (-($white-space - .2%));
+}

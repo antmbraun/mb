@@ -3,37 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/custom.js" defer></script>
   </head>
-  <body>
-      <!-- Use the following phrases and sentences for your page content: -->
-      <!-- 
-        Back to webinar schedule
-        Webinar
-        Fitness Business Essentials
-        Monday, August 27th 1:00 PM PT
-        Course description
-        Running a business isn’t always as simple as just doing what you love. Good customer service is just one part of the picture. There are a lot of numbers to decipher and make decisions about.
-        But which ones really matter? The right ones will tell a story–about your marketing, attendance trends, retention levels and overall business performance. Arm yourself with the tools you need to start and run a successful business from entrepreneurial veterans who’ve been there and made it.
-        Registration closes 10/2
-        Portrait of Allison Jones
-        Presented by Allison Jones, Director of Client Growth
-        As Director of Client Growth, Allison leads a growing team that helps set new business up for success. Allison and her team guide entrepreneurs on how to save time on scheduling and payroll as they transition from pen and paper to digital business management.
-        Topics Covered
-        Going Digital
-        Moving from pen and paper to the web for scheduling, inventory tracking, retail purchases and key tag check-ins.
-        Mobile Business Management
-        Taking your front desk with you and managing your business wherever you are.
-        Numbers That Matter Most
-        Tracking all of the essential numbers at the close of your day.
-        Company
-        Register
-        All fields are required
-        First name
-        Last name
-        Business name
-        Email
-        Sign up
-        Privacy Policy
-      -->
+  <body onload="copyrightDate()">
+    <div id="uberheader"><nav><a href="/webinars">&#9664; Back to webinar schedule</a></nav></div>
+    <header>
+        <h2>Webinar</h2>
+        <h1>Fitness Business Essentials</h1>
+        <p>Monday, August 27th 1:00 PM PT</p>
+    </header>
+    <div id="container">
+      <main role="main">
+        <article class="course">
+          <section class="course-description">
+            <h2>Course description</h2>
+            <p>Running a business isn’t always as simple as just doing what you love. Good customer service is just one part of the picture. There are a lot of numbers to decipher and make decisions about.</p>
+            <p>But which ones really matter? The right ones will tell a story–about your marketing, attendance trends, retention levels and overall business performance. Arm yourself with the tools you need to start and run a successful business from entrepreneurial veterans who’ve been there and made it.</p>
+            <strong>Registration closes 10/2</strong>
+            <section class="course-presenter">
+              <img class="portrait" src="assets/Profile_Woman.svg" alt="Portrait of Allison Jones">
+              <div>
+                <h4>Presented by Allison Jones, Director of Client Growth</h4>
+                <p>As Director of Client Growth, Allison leads a growing team that helps set new business up for success. Allison and her team guide entrepreneurs on how to save time on scheduling and payroll as they transition from pen and paper to digital business management.</p>
+              </div>
+            </section>
+          </section>
+          <section class="topics-covered">
+            <h2>Topics Covered</h2>
+            <ul>
+              <li>
+                <img src="assets/Barcode-Scanner@1x.jpg" srcset="assets/Barcode-Scanner@1x.jpg 1x, assets/Barcode-Scanner@2x.jpg 2x" alt="">
+                <div>
+                  <h3>Going Digital</h3>
+                  <p>Moving from pen and paper to the web for scheduling, inventory tracking, retail purchases and key tag check-ins.</p>
+                </div>
+              </li>
+              <li>
+                <img src="assets/Card-Reader@1x.jpg" srcset="assets/Card-Reader@1x.jpg 1x, assets/Card-Reader@2x.jpg 2x" alt="">
+                <div>
+                  <h3>Mobile Business Management</h3>
+                  <p>Taking your front desk with you and managing your business wherever you are.</p>
+                </div>
+              </li>
+              <li>
+                <img src="assets/Labels@1x.jpg" srcset="assets/Labels@1x.jpg 1x, assets/Labels@2x.jpg 2x" alt="">
+                <div>
+                  <h3>Numbers That Matter Most</h3>
+                  <p>Tracking all of the essential numbers at the close of your day.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <form id="course-registration" name="registration" method="post" novalidate="" onsubmit="return processRegistration()">
+            <h2>Register</h2>
+            <p>All fields are required</p>
+            <div id="form-message"></div>
+            <input type="text" name="firstname" placeholder="First name" required><br>
+            <input type="text" name="lastname" placeholder="Last name" required><br>
+            <input type="text" name="businessname" placeholder="Business name" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input class="button" type="submit" value="Sign Up">
+            <p><a class="expand" href="#">Privacy Policy</a></p>
+          </form>
+        </article>
+      </main>
+      <footer>
+        <div>&copy; <span id="copyright"></span> Company</div>
+      </footer>
+    </div>
   </body>
 </html>

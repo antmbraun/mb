@@ -1,0 +1,22 @@
+// Colors
+$black:		#1a1a1f;
+$gray: 		#565961;
+$lightgray: #eff1f3;
+$white:		#ffffff;
+$teal:		#2fa6bb;
+$orange: 	#f17b19;
+$white:		#ffffff;
+
+// Fonts
+$primary-font: 		'Lato', sans-serif;
+$base-font-size: 	14px;
+$font-color: 		$gray;
+
+// Spacing
+$white-space: 5%;
+$content-width: 1200px;
+
+
+$breakpoints: (
+  'large': (min-width: 1000px),
+);

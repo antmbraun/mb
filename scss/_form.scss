@@ -1,0 +1,43 @@
+form {
+	background: $lightgray;
+	padding: 2em;
+	margin-bottom: $white-space;
+}
+
+input {
+	padding: 1em;
+	margin-bottom: 1em;
+	// border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	// white-space: $whitespace;
+	// background: $white;
+	// line-height: $line-height;
+	font-size: $base-font-size;
+	font-family: $primary-font;
+	width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+.button {
+	color: $white;
+	background-color: $orange;
+	border: none;
+	font-size: $base-font-size;
+	border-radius: 3px;
+	// padding: $whitespace*.25 $whitespace;
+	width:50%;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($teal, 10%);
+		border-bottom: none;
+	}
+}
+
+#form-message {
+	padding: 1em;
+    margin-bottom: 1em;
+    display:none;
+}

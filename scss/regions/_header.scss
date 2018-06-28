@@ -1,0 +1,38 @@
+
+#uberheader {
+	background: $black;
+	padding: 1em $white-space;
+	nav {
+		max-width: $content-width;
+		margin:auto;
+		a {
+			color: $white;
+			text-decoration: none;
+			// margin-left: $white-space;
+		}
+	}
+}
+
+header {
+	background: $teal;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2.5% 0;
+
+	* {
+		color: $white;
+		text-align: center;
+		margin: .2em;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1.5em;
+		font-weight: lighter;
+	}
+}

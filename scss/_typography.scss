@@ -1,0 +1,39 @@
+// Generic typography
+body {
+	font-family: $primary-font; 
+	font-size: $base-font-size;
+	color: $font-color;
+	// line-height: $line-height;
+	// margin: 0 auto;
+}
+
+h1 {
+	font-size:54px;
+}
+
+h2 {
+	color: $black;
+	font-size: 32px;
+	font-weight: 100;
+	margin-bottom: .8em;
+}
+
+h3 {
+	color: $black;
+	font-size: 28px;
+	margin-bottom:1em;
+}
+
+h4 {
+	color: $gray;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+p {
+	line-height: 26px;
+}
+
+a {
+	color: $teal;
+}
