@@ -131,10 +131,6 @@ footer {
   .topics-covered li {
     width: 32.4%; } }
 
-@media (min-width: 1000px) {
-  .course {
-    display: grid;
-    grid-row-gap: 5%; } }
 .course-presenter {
   display: flex;
   flex-direction: column;

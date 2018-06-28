@@ -10,7 +10,7 @@ body {
 	margin:auto;
 }
 
-@media (min-width:1000px) {
+@media (min-width: $large) {
 
 	.course-description {
 		grid-column: span 6;
